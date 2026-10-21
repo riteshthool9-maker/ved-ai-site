@@ -44,7 +44,7 @@ class VedInvestmentWebsiteTest(unittest.TestCase):
         cls.html = SITE.read_text(encoding="utf-8-sig")
         cls.doc = SiteParser()
         cls.doc.feed(cls.html)
-        cls.visible = re.sub(r"\\s+", " ", " ".join(cls.doc.text_nodes))
+        cls.visible = re.sub(r"\s+", " ", " ".join(cls.doc.text_nodes))
 
     def test_correct_current_funding_request(self):
         self.assertIn("₹2 crore", self.visible)
