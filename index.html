@@ -546,6 +546,42 @@
             gap: 24px;
         }
 
+        .funding-panel {
+            margin-top: 42px;
+            max-width: 860px;
+            padding: clamp(26px, 5vw, 48px);
+            border: 1px solid var(--green-border);
+            border-radius: 24px;
+            background: linear-gradient(
+                135deg,
+                rgba(33, 212, 139, .08),
+                rgba(8, 27, 18, .94)
+            );
+        }
+
+        .funding-label {
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .funding-amount {
+            margin: 12px 0 4px;
+            color: var(--green);
+            font-size: clamp(38px, 6vw, 62px);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -.04em;
+        }
+
+        .funding-panel p {
+            max-width: 700px;
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
         @media (
             max-width: 820px
         ) {
@@ -618,6 +654,10 @@
                 Progress
             </a>
 
+            <a href="#funding">
+                Investment
+            </a>
+
             <a href="#founder">
                 Founder
             </a>
@@ -662,6 +702,13 @@
                     rel="noopener"
                 >
                     Watch 30-sec demo
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="#funding"
+                >
+                    Investment opportunity
                 </a>
 
                 <a
@@ -970,6 +1017,62 @@
                     attachments and agent activity UI.
                 </span>
 
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="funding" aria-labelledby="funding-heading">
+
+    <div class="container">
+
+        <div class="section-label">
+            Investment Opportunity
+        </div>
+
+        <h2 id="funding-heading">
+            Building Ved's next stage.
+        </h2>
+
+        <p class="section-copy">
+            Ved is seeking investment to advance product development,
+            testing, infrastructure and readiness for early users.
+        </p>
+
+        <div class="funding-panel">
+
+            <div class="funding-label">
+                Current investment request
+            </div>
+
+            <div class="funding-amount">
+                ₹2 crore
+            </div>
+
+            <p>
+                INR 2,00,00,000 requested. Ved is in private
+                MVP development and validation. This is the
+                proposed funding amount, not funds already raised.
+            </p>
+
+            <p>
+                Planned priorities include product hardening,
+                secure infrastructure and storage, testing
+                and operating equipment. A detailed budget
+                and investment terms can be shared in discussion.
+            </p>
+
+            <div class="hero-actions">
+                <a
+                    class="button primary"
+                    href="mailto:riteshtool9@gmail.com?subject=Ved%20Investment%20Enquiry"
+                >
+                    Discuss investment
+                </a>
             </div>
 
         </div>
