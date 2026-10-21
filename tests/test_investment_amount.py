@@ -82,7 +82,7 @@ class VedInvestmentWebsiteTest(unittest.TestCase):
     def test_website_remains_static_and_unchanged_layout(self):
         self.assertIn("<main>", self.html)
         self.assertIn("<footer>", self.html)
-        self.assertIn("class=\"hero-grid\"", self.html)
+        self.assertIn("class=\"container hero-grid\"", self.html)
         self.assertIn("class=\"funding-panel\"", self.html)
         self.assertIn("Watch 30-sec demo", self.visible)
         self.assertNotIn("<script", self.html.lower())
